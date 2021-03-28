@@ -1,0 +1,15 @@
+model:
+  _target_: sklearn.linear_model.LogisticRegression
+  max_depth: ???
+  n_estimators: 100
+  random_state: ${general.random_state}
+  penalty: l1
+  solver: liblinear
+  C: 1.0
+  max_iter: 10000
+cross_val:
+  random_state: ${general.random_state}
+  scoring: accuracy
+  cv: 5
+general:
+  random_state: 42

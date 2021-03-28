@@ -1,0 +1,8 @@
+# @package _group_
+name: logreg
+params:
+  penalty: l1
+  solver: liblinear
+  C: 1.0
+  random_state: 42
+  max_iter: 10000

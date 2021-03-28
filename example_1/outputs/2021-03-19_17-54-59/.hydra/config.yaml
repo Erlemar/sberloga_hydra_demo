@@ -1,0 +1,17 @@
+model:
+  name: rf
+  params:
+    n_estimators: 100
+    max_depth: null
+    random_state: 42
+cross_val:
+  params:
+    scoring: null
+    cv: null
+    random_state: 42
+experiment:
+  name: rf
+  params:
+    n_estimators: 2
+    max_depth: 3
+    random_state: 33

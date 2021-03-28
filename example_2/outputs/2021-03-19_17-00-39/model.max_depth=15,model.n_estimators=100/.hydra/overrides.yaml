@@ -1,0 +1,2 @@
+- model.max_depth=15
+- model.n_estimators=100

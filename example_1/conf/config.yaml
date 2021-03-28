@@ -1,0 +1,13 @@
+defaults:
+  - model: rf
+  - cross_val: cross_val
+  - hydra/hydra_logging: colorlog
+  - hydra/job_logging: colorlog
+
+
+hydra:
+  run:
+    dir: outputs/${now:%Y-%m-%d_%H-%M-%S}
+  sweep:
+    dir: outputs/${now:%Y-%m-%d_%H-%M-%S}
+    subdir: ${hydra.job.override_dirname}

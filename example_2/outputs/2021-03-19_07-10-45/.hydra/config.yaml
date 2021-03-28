@@ -1,0 +1,14 @@
+model:
+  _target_: sklearn.linear_model.LogisticRegression
+  penalty: l1
+  solver: liblinear
+  C: 1.0
+  random_state: ${general.random_state}
+  max_iter: 10000
+cross_val:
+  params:
+    scoring: null
+    cv: null
+    random_state: 42
+general:
+  random_state: 42

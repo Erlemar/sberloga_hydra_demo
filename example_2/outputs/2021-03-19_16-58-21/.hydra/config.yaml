@@ -1,0 +1,10 @@
+model:
+  max_depth: 3
+  _target_: sklearn.ensemble.RandomForestClassifier
+  n_estimators: 100
+  random_state: ${general.random_state}
+cross_val:
+  scoring: null
+  cv: null
+general:
+  random_state: 42
